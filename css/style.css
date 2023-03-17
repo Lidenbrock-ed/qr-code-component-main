@@ -1,0 +1,122 @@
+:root {
+    --dark-blue: hsl(218, 44%, 22%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --bg: 21px;
+    --md: 15px;
+    --sm: 12px;
+    --font-bold: 700;
+    --font-regular: 400;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: content-box;
+    font-family: 'Outfit', sans-serif;
+}
+.main {
+    background-color: var(--light-gray);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 16px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 460px;
+}
+.container__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+.container__info--title {
+    color: var(--dark-blue);
+    font-size: var(--bg);
+    font-weight: var(--font-bold);
+    text-align: center;
+    margin: 0px 16px;
+}
+.container__info--text {
+    color: var(--grayish-blue);
+    font-size: var(--md);
+    font-weight: var(--font-regular);
+    text-align: center;
+    padding: 0px 12px 12px;
+}
+.container__image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.image {
+    border-radius: 20px;
+    padding: 8px;
+    width: 90%;
+}
+.attribution {
+    align-items: center;
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+    display: flex;
+    height: 32px;
+    font-size: var(--sm);
+    justify-content: center;
+}
+.attribution > a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    margin-left: 4px;
+}
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        height: 500px;
+    }
+    .container__image {
+        width: 100%;
+    }
+    .container__info {
+        width: 95%;
+    }
+    .container__info--title {
+        font-size: 23px;
+    }
+    .container__info--text {
+        padding: 0px 28px 8px;
+    }
+    .attribution, .attribution > a {
+        font-size: 11px;
+    }  
+}
+
+@media (max-width: 300px) {
+    .container {
+        height: 400px;
+    }
+    .container__info {
+        width: 100%;
+    }
+    .container__info--title {
+        font-size: 19px;
+    }
+    .container__info--text {
+        font-size: 12px;
+        padding: 0px 18px 8px;
+    }
+    .attribution, .attribution > a {
+        font-size: 8px;
+    }  
+}
