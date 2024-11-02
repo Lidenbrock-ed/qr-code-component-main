@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Repository](https://github.com/Lidenbrock-ed/qr-code-component-main)
-- Live Site URL: [Product Preview Card Component Page]([https://github.com/Lidenbrock-ed/qr-code-component-main](https://lidenbrock-ed.github.io/qr-code-component-main/))
+- Live Site URL: [Product Preview Card Component Page](https://lidenbrock-ed.github.io/qr-code-component-main/)
 
 ## My process
 
